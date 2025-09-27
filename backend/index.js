@@ -14,7 +14,7 @@ app.get("/todos", async (req, res) => {
     });
 });
 
-app.post("/todos", async (req, res) => {
+app.post("/todo", async (req, res) => {
     const createPayload = req.body;
     const parsedPayload = createTodo.safeParse(createPayload);
     if(!parsedPayload.success) {
